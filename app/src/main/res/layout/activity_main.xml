@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--All the Sub Realative  Layout are grouped and placed inside
+one linearLayout with orientation of horizontal this if assigned
+untill compute tag start (compute tag starts with another Linear layout)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.thagadur.creditcardhelper.MainActivity">
+<!--A Relative Layout consiting of one TextView and EditText -->
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="16dp">
+<!--TextView alligned parent to left and a text size of 18sp-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Enter Card Balance($)"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/card_bal_editText"
+            android:layout_alignBottom="@+id/card_bal_editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+<!--EditText alligned by margin right of 20 dp from the parent -->
+        <EditText
+            android:id="@+id/card_bal_editText"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="?attr/colorButtonNormal"
+            android:paddingLeft="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_gravity="center_vertical">
+        <!--TextView alligned parent to left and a text size of 18sp-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Early Interest Rate(%)"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/interest_rate_editText"
+            android:layout_alignBottom="@+id/interest_rate_editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <!--EditText alligned by margin right of 20 dp from the parent -->
+        <EditText
+            android:paddingLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="35dp"
+            android:background="?attr/colorButtonNormal"
+            android:id="@+id/interest_rate_editText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="16dp">
+        <!--TextView alligned parent to left and a text size of 18sp-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Minimum Amount($)"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/minimum_amt_editText"
+            android:layout_alignBottom="@+id/minimum_amt_editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!--EditText alligned by margin right of 20 dp from the parent -->
+        <EditText
+            android:id="@+id/minimum_amt_editText"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="?attr/colorButtonNormal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="16dp"
+        android:layout_marginTop="20dp">
+        <!--TextView alligned parent to left and a text size of 18sp-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Card Balance($)"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/final_card_balance_editText"
+            android:layout_alignBottom="@+id/final_card_balance_editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!--EditText alligned by margin right of 20 dp from the parent -->
+        <EditText
+            android:paddingLeft="8dp"
+            android:id="@+id/final_card_balance_editText"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="?attr/colorButtonNormal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="16dp">
+        <!--TextView alligned parent to left and a text size of 18sp-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Months Remaining($)"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/moths_remaining_editText"
+            android:layout_alignBottom="@+id/moths_remaining_editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!--EditText alligned by margin right of 20 dp from the parent -->
+        <EditText
+            android:paddingLeft="8dp"
+            android:id="@+id/moths_remaining_editText"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="?attr/colorButtonNormal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="16dp">
+        <!--TextView alligned parent to left and a text size of 18sp-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest Paid Will Be($)"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/interest_paid_editText"
+            android:layout_alignBottom="@+id/interest_paid_editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <!--EditText alligned by margin right of 20 dp from the parent -->
+        <EditText
+            android:paddingLeft="8dp"
+            android:id="@+id/interest_paid_editText"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="?attr/colorButtonNormal" />
+    </RelativeLayout>
+<!--This Linear Laoyout is taken to arrage the button in
+vertical order and it has been matched with its parent
+textAllCaps is set true for capitalizing all the letters in text field-->
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="compute"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>
